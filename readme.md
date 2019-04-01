@@ -1,0 +1,2 @@
+# Scope
+In this project, the aim has been to use an autoencoder to generate speach from text. Its been trained on my voice, using the audio clips in ./audio and the corresponding text in ./sentences.txt
