@@ -1,13 +1,13 @@
 import numpy as np
 
-def read_file(path, should_augment=True):
+def read_text_file(path, should_augment=True):
 	f=open(path, "r")
 	contents =f.read()
 	contents = contents.split('\n')
 	output = []
 	for c in contents:
 		string = []
-		
+		c = c.lower()
 		for s in range(0, 100):
 			try:
 				string.append(ord(c[s]))
@@ -23,7 +23,7 @@ def read_file(path, should_augment=True):
 
 def main():
 	path = "sentences.txt"
-	print(read_file(path).shape)
+	print(read_text_file(path).shape)
 
 
 if __name__ == '__main__':
